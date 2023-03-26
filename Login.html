@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<style>
+		body h2{
+			text-align: center;
+			color: orange;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			border: solid blue 2px ;
+			border-radius: 20px;
+			background-color: #318c80;
+		}
+
+		input[type=text], input[type=password] {
+			padding: 10px;
+			margin: 10px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+			width: 100%;
+			max-width: 300px;
+		}
+
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px;
+			margin: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			width: 100%;
+			max-width: 200px;
+		}
+
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+		input[type=reset]{
+			background-color: orange;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			width: 100%;
+			max-width: 100px;
+		}
+
+		h2 {
+			text-align: center;
+		}
+		footer{
+			margin-top: 10px;
+			font-family: Georgia, serif;
+			
+		}
+
+	</style>
+</head>
+<body>
+	<h2>Login Form</h2>
+	<form action="Table.html" method="post">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" placeholder="Enter username" required>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" placeholder="Enter password" required>
+
+		
+
+			<input type="submit" value="Submit" name=" " >
+
+	
+		<input type="reset" name="reset">
+	</form>
+	<footer>If don't have an account please click here to register <a href="registration.html"> clickhere	</a></footer>
+</body>
+</html>
